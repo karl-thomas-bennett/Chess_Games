@@ -5,21 +5,47 @@ using UnityEngine;
 public class Board : MonoBehaviour
 {
     public List<Tile> tiles;
-    public int selected = 0;
+    private Tile selected = null;
     public int size;
     public Tile tile;
     private Color selectedColor;
+    public List<Piece> pieces;
     // Start is called before the first frame update
     void Start()
     {
-        
+        selected = null;
+        for(int i = 0; i < tiles.Count; i++)
+        {
+            if(tiles[i].piece != null)
+            {
+                pieces.Add(tiles[i].piece);
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Camera.current.transform.forward);
+        if(hit.collider != null)
+        {
+            Tile t = hit.transform.GetComponent<Tile>();
+            t.isMouseOver = true;
+            if (Input.GetMouseButtonUp(0))
+            {
+                if(selected != null)
+                {
+                    selected.selected = false;
+                }
+                selected = t;
+                t.selected = true;
+
+
+            }
+        }
     }
+
+    
 
     public void GenerateTiles()
     {
@@ -44,6 +70,7 @@ public class Board : MonoBehaviour
             {
                 Tile t = Instantiate(tile, transform.position + new Vector3(x, y, 0), transform.rotation, transform);
                 t.GetComponent<SpriteRenderer>().color = new Color((x + y) % 2, (x + y) % 2, (x + y) % 2);
+                t.board = this;
                 tiles.Add(t);
             }
         }
@@ -51,10 +78,9 @@ public class Board : MonoBehaviour
 
     public void SetSelected(int i)
     {
-        tiles[selected].GetComponent<SpriteRenderer>().color = selectedColor;
-        selected = i;
-        selectedColor = tiles[selected].GetComponent<SpriteRenderer>().color;
-        tiles[selected].GetComponent<SpriteRenderer>().color = new Color(1, 1, 0);
-
+        selected.GetComponent<SpriteRenderer>().color = selectedColor;
+        selected = tiles[i];
+        selectedColor = selected.GetComponent<SpriteRenderer>().color;
+        selected.GetComponent<SpriteRenderer>().color = new Color(1, 1, 0);
     }
 }
