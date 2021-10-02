@@ -9,11 +9,13 @@ public class Board : MonoBehaviour
     public int size;
     public Tile tile;
     private Color selectedColor;
-    public List<Piece> pieces;
+    //public List<Piece> pieces;
+    //public List<Piece> taken;
+    //public Game game;
     // Start is called before the first frame update
     void Start()
     {
-        selected = null;
+        /*selected = null;
         for(int i = 0; i < tiles.Count; i++)
         {
             if(tiles[i].piece != null)
@@ -21,12 +23,16 @@ public class Board : MonoBehaviour
                 pieces.Add(tiles[i].piece);
             }
         }
+        for(int i = 0; i < pieces.Count; i++)
+        {
+            pieces[i].id = i;
+        }*/
     }
 
     // Update is called once per frame
     void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Camera.current.transform.forward);
+        /*RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Camera.current.transform.forward);
         if(hit.collider != null)
         {
             Tile t = hit.transform.GetComponent<Tile>();
@@ -42,7 +48,7 @@ public class Board : MonoBehaviour
 
 
             }
-        }
+        }*/
     }
 
     
@@ -78,7 +84,10 @@ public class Board : MonoBehaviour
 
     public void SetSelected(int i)
     {
-        selected.GetComponent<SpriteRenderer>().color = selectedColor;
+        if(selected != null)
+        {
+            selected.GetComponent<SpriteRenderer>().color = selectedColor;
+        }
         selected = tiles[i];
         selectedColor = selected.GetComponent<SpriteRenderer>().color;
         selected.GetComponent<SpriteRenderer>().color = new Color(1, 1, 0);

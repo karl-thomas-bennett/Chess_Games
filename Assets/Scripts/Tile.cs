@@ -5,23 +5,23 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
     public Color baseColor;
-    public bool isPossibleMove = false;
+    //public bool isPossibleMove = false;
     public bool isMouseOver = false;
     public bool selected = false;
-    public Piece piece;
-    public Color moveColor = Color.cyan;
-    public Color mouseMoveColor = Color.green;
-    public Color mouseColor = Color.yellow;
+    //public Piece piece;
+    //public Color moveColor = Color.cyan;
+    //public Color mouseMoveColor = Color.green;
+    //public Color mouseColor = Color.yellow;
     public Board board;
     // Start is called before the first frame update
     void Start()
     {
         baseColor = GetComponent<SpriteRenderer>().color;
         gameObject.AddComponent<BoxCollider2D>();
-        if(piece != null)
+        /*if(piece != null)
         {
             piece.tile = this;
-        }
+        }*/
     }
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class Tile : MonoBehaviour
     {
         
         
-        if (isPossibleMove)
+        /*if (isPossibleMove)
         {
             GetComponent<SpriteRenderer>().color = baseColor / 2 + moveColor / 2;
             if (isMouseOver)
@@ -42,9 +42,9 @@ public class Tile : MonoBehaviour
         }
 
         //Board will set this to true again if the mouse is still over
-        isMouseOver = false;
+        isMouseOver = false;*/
     }
-
+    /*
     public void MoveTo(Tile tile)
     {
         if(tile.piece != null)
@@ -58,5 +58,6 @@ public class Tile : MonoBehaviour
     public void TakePiece(Piece piece)
     {
         board.pieces.Remove(piece);
-    }
+        board.taken.Add(piece);
+    }*/
 }
