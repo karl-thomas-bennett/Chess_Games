@@ -8,7 +8,7 @@ public class Tile : MonoBehaviour
     //public bool isPossibleMove = false;
     public bool isMouseOver = false;
     public bool selected = false;
-    //public Piece piece;
+    public Piece piece;
     //public Color moveColor = Color.cyan;
     //public Color mouseMoveColor = Color.green;
     //public Color mouseColor = Color.yellow;
