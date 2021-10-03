@@ -14,8 +14,8 @@ public class Move
     {
         this.from = from;
         this.to = to;
-        //fromId = from.piece.id;
-        //toId = to.piece.id
+        fromId = from.piece.id;
+        toId = to.piece.id;
         this.endsTurn = endsTurn;
     }
 
