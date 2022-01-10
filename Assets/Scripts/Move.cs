@@ -6,8 +6,8 @@ public class Move
 {
     public Tile from;
     public Tile to;
-    public int fromId;
-    public int toId;
+    public Piece fromPiece;
+    public Piece toPiece;
     public bool endsTurn;
     public Move extraMove = null;
 
@@ -15,19 +15,28 @@ public class Move
     {
         this.from = from;
         this.to = to;
-        fromId = from.piece.id;
-        toId = to.piece.id;
+        fromPiece = from.piece;
+        toPiece = to.piece;
         this.endsTurn = endsTurn;
     }
 
     public bool MakeMove()
     {
-        return false;
+        from.piece = null;
+        to.piece = fromPiece;
+        if(toPiece != null)
+        {
+            //play capture sound
+        }
+
+        return true;
     }
 
     public bool UndoMove()
     {
-        return false;
+        from.piece = fromPiece;
+        to.piece = toPiece;
+        return true;
     }
 
 }

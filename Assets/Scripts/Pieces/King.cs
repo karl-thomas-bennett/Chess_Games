@@ -28,7 +28,7 @@ public class King : Piece
         List<Tile> controlled = board.GetControlled(team);
         moves.RemoveAll(move => move.to.piece != null && move.to.piece.team.Equals(team));
         moves.RemoveAll(move => controlled.FindIndex(t => t.transform.Equals(move.to.transform)) != -1);
-        if(board.game.history.Find(move => move.fromId == id) == null)
+        if(board.game.history.Find(move => move.fromPiece.id == id) == null)
         {
             if(controlled.FindIndex(t => t.transform.Equals(tile.transform)) == -1){
                 bool canKingsideCastle = true;
