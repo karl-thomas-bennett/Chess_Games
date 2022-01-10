@@ -15,13 +15,14 @@ public class Board : MonoBehaviour
     public Color highlightTileColour = new Color(0.6f, 1, 0.686f);
     private Color colourOfSelectedTile;
     private float weight = 0.8f;
-    //public List<Piece> pieces;
+    public List<Piece> pieces;
     //public List<Piece> taken;
-    //public Game game;
+    public Game game;
     // Start is called before the first frame update
     void Start()
     {
-        /*selected = null;
+        game = new Game();
+        selected = null;
         for(int i = 0; i < tiles.Count; i++)
         {
             if(tiles[i].piece != null)
@@ -32,7 +33,7 @@ public class Board : MonoBehaviour
         for(int i = 0; i < pieces.Count; i++)
         {
             pieces[i].id = i;
-        }*/
+        }
     }
 
     // Update is called once per frame
@@ -110,5 +111,28 @@ public class Board : MonoBehaviour
             selectedTileColour.g * weight + colourOfSelectedTile.g * (1 - weight),
             selectedTileColour.b * weight + colourOfSelectedTile.b * (1 - weight)
         );
+    }
+
+    public Tile GetRelativeTile(Tile t, Vector2 pos)
+    {
+        Vector2 newTilePos = (Vector2)(t.transform.position) / scale + pos;
+        return tiles.Find(
+            tile => {
+                return (Vector2)tile.transform.position == newTilePos * scale;
+            }
+        );
+    }
+
+    public List<Tile> GetControlled(string team)
+    {
+        List<Tile> output = new List<Tile>();
+        foreach(Piece piece in pieces)
+        {
+            if (!piece.team.Equals(team))
+            {
+                output.AddRange(piece.GetControlled().FindAll(tile => output.FindAll(tile2 => tile.transform.Equals(tile2.transform)).Count == 0));
+            }
+        }
+        return output;
     }
 }

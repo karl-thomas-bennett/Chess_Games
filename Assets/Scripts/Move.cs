@@ -9,6 +9,7 @@ public class Move
     public int fromId;
     public int toId;
     public bool endsTurn;
+    public Move extraMove = null;
 
     public Move(Tile from, Tile to, bool endsTurn = true)
     {
