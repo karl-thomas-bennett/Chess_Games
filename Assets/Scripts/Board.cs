@@ -7,6 +7,7 @@ public class Board : MonoBehaviour
     public List<Tile> tiles;
     private Tile selected = null;
     public int size;
+    public float scale = 10;
     public Tile tile;
     public Color selectedTileColour = new Color(1, 1, 0);
     public Color lightTileColour = new Color(0.6552599f, 0.8879172f, 0.8962264f);
@@ -60,6 +61,7 @@ public class Board : MonoBehaviour
 
     public void GenerateTiles()
     {
+        tiles.Clear();
         int count = transform.childCount;
         int j = 0;
         for (int i = 0; i < count; i++)
@@ -73,13 +75,14 @@ public class Board : MonoBehaviour
             }
             
         }
-        tiles.Clear();
+        
         
         for (int y = 0; y < size; y++)
         {
             for (int x = 0; x < size; x++)
             {
-                Tile t = Instantiate(tile, transform.position + new Vector3(x, y, 0), transform.rotation, transform);
+                Tile t = Instantiate(tile, transform.position + new Vector3(x*scale, y*scale, 0), transform.rotation, transform);
+                t.transform.localScale = new Vector3(scale, scale, 1);
                 if((x + y) % 2 == 1)
                 {
                     t.GetComponent<SpriteRenderer>().color = lightTileColour;
