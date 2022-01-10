@@ -14,7 +14,7 @@ public class Board_Creator : Editor
         Handles.color = Color.green;
         for(int i = 0; i < board.tiles.Count; i++)
         {
-            if(Handles.Button(board.tiles[i].transform.position, Quaternion.identity, 0.5f, 0.5f, Handles.RectangleHandleCap))
+            if(Handles.Button(board.tiles[i].transform.position, Quaternion.identity, board.transform.localScale.x/2, 0.5f, Handles.RectangleHandleCap))
             {
                 board.SetSelected(i);
             }
