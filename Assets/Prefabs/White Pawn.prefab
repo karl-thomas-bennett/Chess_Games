@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1259392821013849891}
   - component: {fileID: 891228027747920336}
   m_Layer: 0
-  m_Name: Black Pawn
+  m_Name: White Pawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e4253409aaf53324f8c961271bafa63f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d425784b2e16a3540bde4449e5d6f03e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -94,6 +94,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5aa233f9db0dd04ba9af740f8699ad5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  team: Black
+  team: White
   tile: {fileID: 0}
   id: 0
