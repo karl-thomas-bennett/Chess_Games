@@ -8,7 +8,12 @@ public class Board : MonoBehaviour
     private Tile selected = null;
     public int size;
     public Tile tile;
-    private Color selectedColor;
+    public Color selectedTileColour = new Color(1, 1, 0);
+    public Color lightTileColour = new Color(0.6552599f, 0.8879172f, 0.8962264f);
+    public Color darkTileColour = new Color(0.1702118f, 0.4405672f, 0.7075472f);
+    public Color highlightTileColour = new Color(0.6f, 1, 0.686f);
+    private Color colourOfSelectedTile;
+    private float weight = 0.8f;
     //public List<Piece> pieces;
     //public List<Piece> taken;
     //public Game game;
@@ -75,7 +80,14 @@ public class Board : MonoBehaviour
             for (int x = 0; x < size; x++)
             {
                 Tile t = Instantiate(tile, transform.position + new Vector3(x, y, 0), transform.rotation, transform);
-                t.GetComponent<SpriteRenderer>().color = new Color((x + y) % 2, (x + y) % 2, (x + y) % 2);
+                if((x + y) % 2 == 1)
+                {
+                    t.GetComponent<SpriteRenderer>().color = lightTileColour;
+                }
+                else
+                {
+                    t.GetComponent<SpriteRenderer>().color = darkTileColour;
+                }
                 t.board = this;
                 tiles.Add(t);
             }
@@ -86,10 +98,14 @@ public class Board : MonoBehaviour
     {
         if(selected != null)
         {
-            selected.GetComponent<SpriteRenderer>().color = selectedColor;
+            selected.GetComponent<SpriteRenderer>().color = colourOfSelectedTile;
         }
         selected = tiles[i];
-        selectedColor = selected.GetComponent<SpriteRenderer>().color;
-        selected.GetComponent<SpriteRenderer>().color = new Color(1, 1, 0);
+        colourOfSelectedTile = selected.GetComponent<SpriteRenderer>().color;
+        selected.GetComponent<SpriteRenderer>().color = new Color(
+            selectedTileColour.r * weight + colourOfSelectedTile.r * (1 - weight),
+            selectedTileColour.g * weight + colourOfSelectedTile.g * (1 - weight),
+            selectedTileColour.b * weight + colourOfSelectedTile.b * (1 - weight)
+        );
     }
 }
