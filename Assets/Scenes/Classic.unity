@@ -153,8 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &145404078
 SpriteRenderer:
@@ -252,8 +252,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &185052418
 SpriteRenderer:
@@ -316,7 +316,7 @@ Transform:
   m_LocalPosition: {x: 40, y: 10, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
-  - {fileID: 1874138976}
+  - {fileID: 920175448}
   m_Father: {fileID: 2090267741}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -352,8 +352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &208799385
 SpriteRenderer:
@@ -451,8 +451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &218226772
 SpriteRenderer:
@@ -550,8 +550,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &219606716
 SpriteRenderer:
@@ -649,8 +649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &264214073
 SpriteRenderer:
@@ -749,8 +749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &274359408
 SpriteRenderer:
@@ -1006,8 +1006,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &324634039
 SpriteRenderer:
@@ -1145,8 +1145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &356941572
 SpriteRenderer:
@@ -1244,8 +1244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &373606430
 SpriteRenderer:
@@ -1343,8 +1343,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &388241086
 SpriteRenderer:
@@ -1443,8 +1443,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &396761121
 SpriteRenderer:
@@ -1542,8 +1542,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &420121850
 SpriteRenderer:
@@ -1642,8 +1642,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &495699907
 SpriteRenderer:
@@ -1741,8 +1741,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &507075084
 SpriteRenderer:
@@ -1840,8 +1840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &507816998
 SpriteRenderer:
@@ -1959,8 +1959,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &614472736
 SpriteRenderer:
@@ -2079,8 +2079,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &676413471
 SpriteRenderer:
@@ -2253,8 +2253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &748888591
 SpriteRenderer:
@@ -2321,6 +2321,81 @@ Transform:
   m_Father: {fileID: 2090267741}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &774517057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1042542306}
+    m_Modifications:
+    - target: {fileID: 1259392821013849888, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_Name
+      value: White Pawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d8675677286c57245a39ddac30395654, type: 3}
+--- !u!4 &774517058 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+    type: 3}
+  m_PrefabInstance: {fileID: 774517057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &776412777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2428,8 +2503,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &780752265
 SpriteRenderer:
@@ -2527,8 +2602,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &781325016
 SpriteRenderer:
@@ -2669,6 +2744,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 800205507}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &817139542
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1066278249}
+    m_Modifications:
+    - target: {fileID: 1259392821013849888, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_Name
+      value: White Pawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d8675677286c57245a39ddac30395654, type: 3}
+--- !u!4 &817139543 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+    type: 3}
+  m_PrefabInstance: {fileID: 817139542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &823941927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2721,8 +2871,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &835576984
 SpriteRenderer:
@@ -2821,8 +2971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &841568245
 SpriteRenderer:
@@ -2921,8 +3071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &884132119
 SpriteRenderer:
@@ -3063,6 +3213,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 896762085}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &920175447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 185052419}
+    m_Modifications:
+    - target: {fileID: 1259392821013849888, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_Name
+      value: White Pawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d8675677286c57245a39ddac30395654, type: 3}
+--- !u!4 &920175448 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
+    type: 3}
+  m_PrefabInstance: {fileID: 920175447}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &943183923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3095,8 +3320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &943183925
 SpriteRenderer:
@@ -3195,8 +3420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1007000400
 SpriteRenderer:
@@ -3295,8 +3520,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1042542305
 SpriteRenderer:
@@ -3359,7 +3584,7 @@ Transform:
   m_LocalPosition: {x: 20, y: 10, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
-  - {fileID: 1628193933}
+  - {fileID: 774517058}
   m_Father: {fileID: 2090267741}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3395,8 +3620,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1053570763
 SpriteRenderer:
@@ -3495,8 +3720,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1066278248
 SpriteRenderer:
@@ -3559,7 +3784,7 @@ Transform:
   m_LocalPosition: {x: 30, y: 10, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
-  - {fileID: 1854068867}
+  - {fileID: 817139543}
   m_Father: {fileID: 2090267741}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3595,8 +3820,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1069353261
 SpriteRenderer:
@@ -3694,8 +3919,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1089571866
 SpriteRenderer:
@@ -3794,8 +4019,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1102454973
 SpriteRenderer:
@@ -3894,8 +4119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1105113264
 SpriteRenderer:
@@ -4034,8 +4259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1131638361
 SpriteRenderer:
@@ -4154,8 +4379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1190244663
 SpriteRenderer:
@@ -4328,8 +4553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1250404953
 SpriteRenderer:
@@ -4503,8 +4728,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1330556507
 SpriteRenderer:
@@ -4603,8 +4828,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1332619109
 SpriteRenderer:
@@ -4702,8 +4927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1351205844
 SpriteRenderer:
@@ -4801,8 +5026,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1370986425
 SpriteRenderer:
@@ -4901,8 +5126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1375314024
 SpriteRenderer:
@@ -5076,8 +5301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1419718359
 SpriteRenderer:
@@ -5251,8 +5476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1427947283
 SpriteRenderer:
@@ -5351,8 +5576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1440320634
 SpriteRenderer:
@@ -5450,8 +5675,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1463136922
 SpriteRenderer:
@@ -5550,8 +5775,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1474435321
 SpriteRenderer:
@@ -5670,8 +5895,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1527217971
 SpriteRenderer:
@@ -5770,8 +5995,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1561592368
 SpriteRenderer:
@@ -6040,8 +6265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1616783606
 SpriteRenderer:
@@ -6107,81 +6332,6 @@ Transform:
   m_Father: {fileID: 2090267741}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1628193932
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1042542306}
-    m_Modifications:
-    - target: {fileID: 1259392821013849888, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_Name
-      value: White Pawn
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8675677286c57245a39ddac30395654, type: 3}
---- !u!4 &1628193933 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-    type: 3}
-  m_PrefabInstance: {fileID: 1628193932}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1637843191
 GameObject:
   m_ObjectHideFlags: 0
@@ -6214,8 +6364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1637843193
 SpriteRenderer:
@@ -6388,8 +6538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1726125265
 SpriteRenderer:
@@ -6487,8 +6637,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1728707111
 SpriteRenderer:
@@ -6586,8 +6736,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1783669210
 SpriteRenderer:
@@ -6685,8 +6835,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1819432966
 SpriteRenderer:
@@ -6785,8 +6935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1839556163
 SpriteRenderer:
@@ -6926,156 +7076,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1259392821013849890, guid: a7159ef9cf2a7fd47b4106517a096189,
     type: 3}
   m_PrefabInstance: {fileID: 1844209178}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1854068866
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1066278249}
-    m_Modifications:
-    - target: {fileID: 1259392821013849888, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_Name
-      value: White Pawn
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8675677286c57245a39ddac30395654, type: 3}
---- !u!4 &1854068867 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-    type: 3}
-  m_PrefabInstance: {fileID: 1854068866}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1874138975
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 185052419}
-    m_Modifications:
-    - target: {fileID: 1259392821013849888, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_Name
-      value: White Pawn
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d8675677286c57245a39ddac30395654, type: 3}
---- !u!4 &1874138976 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1259392821013849890, guid: d8675677286c57245a39ddac30395654,
-    type: 3}
-  m_PrefabInstance: {fileID: 1874138975}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1894811090
 PrefabInstance:
@@ -7259,8 +7259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1958630853
 SpriteRenderer:
@@ -7359,8 +7359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1970953267
 SpriteRenderer:
@@ -7554,8 +7554,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &1995565200
 SpriteRenderer:
@@ -7654,8 +7654,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &2015218142
 SpriteRenderer:
@@ -7753,8 +7753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &2019506225
 SpriteRenderer:
@@ -7852,8 +7852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &2028467316
 SpriteRenderer:
@@ -7951,8 +7951,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &2082783489
 SpriteRenderer:
@@ -8119,7 +8119,8 @@ MonoBehaviour:
   selectedTileColour: {r: 1, g: 1, b: 0, a: 1}
   lightTileColour: {r: 0.6552599, g: 0.88791716, b: 0.8962264, a: 1}
   darkTileColour: {r: 0.1702118, g: 0.44056723, b: 0.7075472, a: 1}
-  highlightTileColour: {r: 0.6, g: 1, b: 0.686, a: 1}
+  moveTileColour: {r: 0.6, g: 1, b: 0.686, a: 1}
+  hoverTileColour: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   pieces: []
 --- !u!4 &2090267741
 Transform:
@@ -8231,8 +8232,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &2105584279
 SpriteRenderer:
@@ -8330,8 +8331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseColor: {r: 0, g: 0, b: 0, a: 0}
   isMouseOver: 0
-  selected: 0
   piece: {fileID: 0}
+  highlights: []
   board: {fileID: 2090267740}
 --- !u!212 &2123189613
 SpriteRenderer:

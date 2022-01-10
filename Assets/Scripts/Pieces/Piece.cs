@@ -67,4 +67,11 @@ public abstract class Piece : MonoBehaviour
         }
         return moves;
     }
+    protected void AddMove(List<Move> moves, Tile move)
+    {
+        if (move != null)
+        {
+            moves.Add(new Move(tile, move));
+        }
+    }
 }

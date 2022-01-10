@@ -12,7 +12,7 @@ public class Pawn : Piece
             for(int i = -1; i <= 1; i++)
             {
                 if(i != 0)
-                    moves.Add(new Move(tile, board.GetRelativeTile(tile, new Vector2(i, 1))));
+                    AddMove(moves, board.GetRelativeTile(tile, new Vector2(i, 1)));
             }
         }
         if (team.Equals("Black"))
@@ -20,7 +20,7 @@ public class Pawn : Piece
             for (int i = -1; i <= 1; i++)
             {
                 if (i != 0)
-                    moves.Add(new Move(tile, board.GetRelativeTile(tile, new Vector2(i, -1))));
+                    AddMove(moves, board.GetRelativeTile(tile, new Vector2(i, -1)));
             }
         }
         return moves;
@@ -33,11 +33,11 @@ public class Pawn : Piece
         Tile inFront = board.GetRelativeTile(tile, new Vector2(0, team.Equals("White") ? 1 : -1));
         if (inFront.piece == null)
         {
-            moves.Add(new Move(tile, inFront));
-            if(board.game.history.FindIndex(move => move.fromPiece.id == id) == -1)
+            AddMove(moves, inFront);
+            if (board.game.history.FindIndex(move => move.fromPiece.id == id) == -1)
             {
                 inFront = board.GetRelativeTile(inFront, new Vector2(0, team.Equals("White") ? 1 : -1));
-                moves.Add(new Move(tile, inFront));
+                AddMove(moves, inFront);
             }
         }
         return moves;

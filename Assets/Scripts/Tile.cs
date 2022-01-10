@@ -8,7 +8,7 @@ public class Tile : MonoBehaviour
     //public bool isPossibleMove = false;
     public bool isMouseOver = false;
     public Piece piece;
-    public Color highlight;
+    public List<Color> highlights;
     //public Color moveColor = Color.cyan;
     //public Color mouseMoveColor = Color.green;
     //public Color mouseColor = Color.yellow;
@@ -17,8 +17,12 @@ public class Tile : MonoBehaviour
     void Start()
     {
         baseColor = GetComponent<SpriteRenderer>().color;
-        highlight = baseColor;
+        highlights = new List<Color>();
         gameObject.AddComponent<BoxCollider2D>();
+        if(transform.childCount > 0)
+        {
+            piece = transform.GetChild(0).GetComponent<Piece>();
+        }
         if(piece != null)
         {
             piece.tile = this;
@@ -28,7 +32,12 @@ public class Tile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<SpriteRenderer>().color = (highlight/2 + baseColor/2);
+        Color color = baseColor/(highlights.Count + 1);
+        foreach(Color c in highlights)
+        {
+            color += c / (highlights.Count + 1);
+        }
+        GetComponent<SpriteRenderer>().color = color;
 
         /*if (isPossibleMove)
         {

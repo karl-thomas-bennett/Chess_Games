@@ -6,13 +6,15 @@ public class Board : MonoBehaviour
 {
     public List<Tile> tiles;
     private Tile selected = null;
+    private Tile hovered = null;
     public int size;
     public float scale = 10;
     public Tile tile;
     public Color selectedTileColour = new Color(1, 1, 0);
     public Color lightTileColour = new Color(0.6552599f, 0.8879172f, 0.8962264f);
     public Color darkTileColour = new Color(0.1702118f, 0.4405672f, 0.7075472f);
-    public Color highlightTileColour = new Color(0.6f, 1, 0.686f);
+    public Color moveTileColour = new Color(0.6f, 1, 0.686f);
+    public Color hoverTileColour = new Color(0.2f, 0.2f, 0.2f);
     private Color colourOfSelectedTile;
     private float weight = 0.8f;
     public List<Piece> pieces;
@@ -39,23 +41,43 @@ public class Board : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Camera.current.transform.forward);
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Camera.main.transform.forward);
+        
         if(hit.collider != null)
         {
             Tile t = hit.transform.GetComponent<Tile>();
-            t.isMouseOver = true;
+            if(hovered != null)
+            {
+                hovered.highlights.Remove(hoverTileColour);
+            }
+            hovered = t;
+            hovered.highlights.Add(hoverTileColour);
             if (Input.GetMouseButtonUp(0))
             {
                 if(selected != null)
                 {
-                    selected.selected = false;
+                    selected.highlights.Remove(selectedTileColour);
+                    if (selected.piece != null)
+                    {
+                        foreach (Move move in selected.piece.GetValidMoves())
+                        {
+                            move.to.highlights.Remove(moveTileColour);
+                        }
+                    }
                 }
                 selected = t;
-                t.selected = true;
-
-
+                selected.highlights.Add(selectedTileColour);
+                Debug.Log(selected.piece);
+                if(selected.piece != null)
+                {
+                    Debug.Log(selected.piece.GetValidMoves());
+                    foreach(Move move in selected.piece.GetValidMoves())
+                    {
+                        move.to.highlights.Add(moveTileColour);
+                    }
+                }
             }
-        }*/
+        }
     }
 
     

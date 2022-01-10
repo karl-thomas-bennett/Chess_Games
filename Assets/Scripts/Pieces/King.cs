@@ -14,7 +14,7 @@ public class King : Piece
             {
                 if(!(y == 0 && x == 0))
                 {
-                    moves.Add(new Move(tile, board.GetRelativeTile(tile, new Vector2(x, y))));
+                    AddMove(moves, board.GetRelativeTile(tile, new Vector2(x, y)));
                 }
             }
         }
