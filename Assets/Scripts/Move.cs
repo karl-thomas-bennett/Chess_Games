@@ -20,20 +20,24 @@ public class Move
         this.endsTurn = endsTurn;
     }
 
-    public bool MakeMove()
+    public bool MakeMove(Game game)
     {
-        from.piece = null;
-        to.piece = fromPiece;
-        if(toPiece != null)
+        game.history.Add(this);
+        from.MoveTo(to);
+        if(extraMove != null)
         {
-            //play capture sound
+            extraMove.MakeMove(game);
         }
-
         return true;
     }
 
-    public bool UndoMove()
+    public bool UndoMove(Game game)
     {
+        if (extraMove != null)
+        {
+            extraMove.UndoMove(game);
+        }
+        game.history.Remove(this);
         from.piece = fromPiece;
         to.piece = toPiece;
         return true;

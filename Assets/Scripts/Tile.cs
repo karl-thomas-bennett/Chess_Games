@@ -54,20 +54,25 @@ public class Tile : MonoBehaviour
         //Board will set this to true again if the mouse is still over
         isMouseOver = false;*/
     }
-    /*
+    
     public void MoveTo(Tile tile)
     {
         if(tile.piece != null)
         {
             TakePiece(tile.piece);
+            
         }
         tile.piece = piece;
+        
+        piece.transform.parent = tile.transform;
+        piece.tile = tile;
+        piece.transform.localPosition = new Vector3(0, 0, -0.1f);
         piece = null;
     }
 
     public void TakePiece(Piece piece)
     {
         board.pieces.Remove(piece);
-        board.taken.Add(piece);
-    }*/
+        Destroy(piece.gameObject);
+    }
 }

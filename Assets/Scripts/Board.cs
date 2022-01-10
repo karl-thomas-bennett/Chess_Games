@@ -54,6 +54,21 @@ public class Board : MonoBehaviour
             hovered.highlights.Add(hoverTileColour);
             if (Input.GetMouseButtonUp(0))
             {
+                if (t.highlights.Contains(moveTileColour))
+                {
+                    
+                    selected.highlights.Remove(selectedTileColour);
+                    if (selected.piece != null)
+                    {
+                        foreach (Move move in selected.piece.GetValidMoves())
+                        {
+                            move.to.highlights.Remove(moveTileColour);
+                        }
+                    }
+                    selected.piece.GetValidMoves().Find(move => move.to.transform.Equals(t.transform)).MakeMove(game);
+                    selected = null;
+                    return;
+                }
                 if(selected != null)
                 {
                     selected.highlights.Remove(selectedTileColour);
@@ -67,10 +82,8 @@ public class Board : MonoBehaviour
                 }
                 selected = t;
                 selected.highlights.Add(selectedTileColour);
-                Debug.Log(selected.piece);
                 if(selected.piece != null)
                 {
-                    Debug.Log(selected.piece.GetValidMoves());
                     foreach(Move move in selected.piece.GetValidMoves())
                     {
                         move.to.highlights.Add(moveTileColour);
